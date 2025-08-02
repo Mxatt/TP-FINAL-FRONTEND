@@ -4,7 +4,6 @@ import { SecurityIcon } from "../../src/assets/icons/svgicons";
 
 const MainScreen = () => (
   <section id="mainScreen">
-    <h1 style={{ color: "red" }}>Estoy en MainScreen</h1>
     <div className="hero">
       <img src="/mainscreen.png" alt="DownloadWhatsapp" />
       <h2>Descarga WhatsApp para Windows</h2>

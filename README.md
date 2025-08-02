@@ -8,4 +8,6 @@ Decidi usar este formato de carpetas ya que divido principalmente 2 cosas, 1 las
 y 2 ya que divido componentes chiquititos para mejorar la escabilidad, Cada una con su respectivo css mas especifico y su funcion en si que se reutiliza en las pantallas, Donde en algunos casos le di un poco de css mas generico para que se adecue al css que le estoy dando a elementos en alguna pantalla en especifico.
 Tambien, decidi crear en la carpeta assets un archivo de iconos, en los cuales guardo los svgs, los guarde con la posibilidad no solo de si, mantener el codigo limpio llamandolo unicamente como componente evitando pegar todas las lineas de codigo del svg, sino que ademas, puedo pasarle props, como el classname para modificarlo con css, Eso es algo que me ahorro mucho tiempo, ya que si, esa tambien fue una complicacion cuando arrancaba, Queria evitar ir en contra de la metodologia DRY, evitar escribir 20 svgs que solo ensucian el codigo.
 
+mis rutas se actualizan, siendo la base la url con / y al clickear mis contactos, se actualiza con la id del mismo cambiando los mensajes
+
 Luego, La funcion de borrar mensajes puse para que se borren UNICAMENTE los mensajes que manda la persona que manda el mensaje, y con una condicional, detecto si lo mando el usuario (ahora inutil, pero intente dejar la logica en un supuesto de venir datos de una database) 
