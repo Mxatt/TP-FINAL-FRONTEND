@@ -1,12 +1,11 @@
-# React + Vite
+Elegi el CLON DE WHATSAPP, ya que fue en parte por lo que vimos en la cursada, Mi trabajo, si bien fue con conocimientos adquiridos en la cursada, mi trabajo lo hice de 0 yo, por mi cuenta con lo que fui entendiendo, Las librerias que use, fueron unicamente las de react router, para las rutas y las navegaciones, el resto, todo por defecto.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Al hacer el trabajo por mi cuenta el primer problema que encontre fue el como hacer las rutas, era un tema el cual se me dificultaba mucho al inicio, coincidero que use state no fue tanto mi problema, pero si me costo algo al inicio. 
 
-Currently, two official plugins are available:
+Intente hacer todo mi trabajo en ingles para adecuarme y que sea mas legible para no mezclar terminologias mas especificas y fui a nombres de variables y funciones mas aceptadas en la comidad.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Decidi usar este formato de carpetas ya que divido principalmente 2 cosas, 1 las pantallas, donde finalmente termino renderizando ahi mi contenido,
+y 2 ya que divido componentes chiquititos para mejorar la escabilidad, Cada una con su respectivo css mas especifico y su funcion en si que se reutiliza en las pantallas, Donde en algunos casos le di un poco de css mas generico para que se adecue al css que le estoy dando a elementos en alguna pantalla en especifico.
+Tambien, decidi crear en la carpeta assets un archivo de iconos, en los cuales guardo los svgs, los guarde con la posibilidad no solo de si, mantener el codigo limpio llamandolo unicamente como componente evitando pegar todas las lineas de codigo del svg, sino que ademas, puedo pasarle props, como el classname para modificarlo con css, Eso es algo que me ahorro mucho tiempo, ya que si, esa tambien fue una complicacion cuando arrancaba, Queria evitar ir en contra de la metodologia DRY, evitar escribir 20 svgs que solo ensucian el codigo.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Luego, La funcion de borrar mensajes puse para que se borren UNICAMENTE los mensajes que manda la persona que manda el mensaje, y con una condicional, detecto si lo mando el usuario (ahora inutil, pero intente dejar la logica en un supuesto de venir datos de una database) 

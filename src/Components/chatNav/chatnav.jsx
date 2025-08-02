@@ -1,6 +1,5 @@
 import React from "react";
 import "./chatnav.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import ContactList from "../../../screens/contactList/contactList.jsx";
 import {
   NewChatIcon,
