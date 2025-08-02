@@ -76,3 +76,9 @@
   background-color: #292a2a;
   transition: background-color 0.15s ease-in-out;
 }
+
+@media screen and (max-width: 1024px) {
+  #aside {
+    display: none;
+  }
+}

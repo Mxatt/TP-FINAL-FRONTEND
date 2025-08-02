@@ -12,7 +12,7 @@ const ChatNav = () => {
   return (
     <section id="chatNavSection">
       <header id="navHeader">
-        <FakeLogo id="fakeLogo" />
+        <FakeLogo id="fakeLogo" className="leftHeader" />
         <div className="rightHeader">
           <button className="navButton">
             <NewChatIcon width="24" height="24" />

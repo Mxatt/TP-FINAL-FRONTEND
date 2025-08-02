@@ -26,7 +26,7 @@ const ChatScreen = () => {
     <section className="chatMain">
       <ChatHeader user={contact.user} profilePhoto={contact.profilePhoto} />
       <div className="chatContainer">
-        <ul>
+        <ul className="listedMessages">
           {messages.map((msg) => (
             <li
               key={msg.messageID}

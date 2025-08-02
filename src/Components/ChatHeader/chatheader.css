@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-height: 70px;
   background-color: #161717;
-  width: 100%;
+  max-width: 100%;
 }
 
 .chatUser {
@@ -45,4 +45,10 @@
   background-color: #292a2a;
   border-radius: 50%;
   transition: background-color 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 1440px) {
+ #chatHeader {
+  max-height: 60px;
+ }
 }

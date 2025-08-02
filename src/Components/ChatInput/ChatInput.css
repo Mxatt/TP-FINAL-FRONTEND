@@ -60,3 +60,23 @@
   background-color: inherit;
   border: none;
 }
+
+@media screen and (max-width: 1440px) {
+  .messageInputContainer{
+    max-width: 100%;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .messageInput{
+    font-size: 0.75rem;
+  }
+  .plusIcon, .stickerIcon{
+    width: 1.2rem;
+  }
+  .voiceButtonContainer{
+    width: 2.24rem;
+    padding: 4px;
+  }
+}

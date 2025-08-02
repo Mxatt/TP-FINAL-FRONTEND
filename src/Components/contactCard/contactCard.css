@@ -63,3 +63,26 @@
   align-items: center;
   text-align: left;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  .messageHour {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactInfo{
+    padding-left: 5px;
+  }
+  .contactInfo p{
+    font-size: 0.75rem;
+  }
+  .contactInfo H3{
+    font-size: 0.875rem;
+  }
+  .profilePhoto img {
+    width: 30px;
+    height: 30px;
+  }
+}

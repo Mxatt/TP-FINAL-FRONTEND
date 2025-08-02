@@ -5,7 +5,7 @@ import { SecurityIcon } from "../../src/assets/icons/svgicons";
 const MainScreen = () => (
   <section id="mainScreen">
     <div className="hero">
-      <img src="/mainscreen.png" alt="DownloadWhatsapp" />
+      <img id="heroImage" src="/mainscreen.png" alt="DownloadWhatsapp" />
       <h2>Descarga WhatsApp para Windows</h2>
       <p>
         Descarga la aplicacion para Windows y haz llamadas, comparte pantalla y
@@ -14,8 +14,8 @@ const MainScreen = () => (
       <button>Descargar</button>
     </div>
     <footer>
-      <SecurityIcon width="20" height="20" /> Tus mensajes personales están
-      cifrados de extremo a extemo.
+      <SecurityIcon width="20" height="20" />
+      Tus mensajes personales están cifrados de extremo a extemo.
     </footer>
   </section>
 );

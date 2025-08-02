@@ -29,10 +29,15 @@ ul {
 
 .messageInputContainer {
   background-color: transparent;
-  width: 100%;
+  max-width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.listedMessages {
+  display: flex;
+  flex-direction: column;
 }
 
 .sendedMessages,
@@ -40,7 +45,7 @@ ul {
   margin: 5px 10px 5px 10px;
   padding: 5px 10px 5px 10px;
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 90%;
   background-color: #242626;
 }
 
@@ -58,4 +63,23 @@ ul {
 .deleteMsgBtn:hover {
   color: red;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .chatMain {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .chatMain {
+    font-size: 1.1rem;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatMain{
+    font-size: 0.9rem;
+  }
 }

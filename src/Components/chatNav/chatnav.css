@@ -85,3 +85,25 @@
 #fakeLogo {
   color: #fff;
 }
+
+@media screen and (max-width: 1440px) {
+  .chat_nav-button {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .chat_nav-button {
+    display: none;
+  }
+  .rightHeader{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-container{
+    width: fit-content;
+  }
+  .search-container input {
+    display: none;}
+}
