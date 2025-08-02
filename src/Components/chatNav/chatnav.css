@@ -1,0 +1,87 @@
+#chatNavSection {
+  padding: 10px 0 10px 15px;
+  background-color: #161717;
+  border-right: 1px solid #3c3c3c;
+  min-width: 30dvw;
+}
+
+.search-container {
+  position: relative;
+  max-width: 96%;
+  border: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 10px 15px;
+  background-color: #2e2f2f;
+}
+
+.search-icon {
+  color: #abacac;
+  max-height: 100%;
+  margin-right: 10px;
+}
+
+.search-container input {
+  color: #abacac;
+  background-color: transparent;
+  border: none;
+  width: 90%;
+  font-size: 15px;
+}
+
+.search-input::placeholder {
+  color: #abacac;
+}
+.search-input:hover {
+  border: 1px solid #3c3c3c;
+}
+
+.buttons-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.chat_nav-button {
+  background-color: #161717;
+  color: #abacac;
+  padding: 6px 12px;
+  border: 1px solid #262727;
+  border-radius: 42px;
+}
+#navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161717;
+  max-height: 64px;
+  margin-bottom: 10px;
+}
+
+.rightHeader {
+  display: flex;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton:hover {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #292a2a;
+  transition: background-color 0.15s ease-in-out;
+}
+
+#fakeLogo {
+  color: #fff;
+}

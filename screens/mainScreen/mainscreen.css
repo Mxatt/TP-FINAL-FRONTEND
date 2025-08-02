@@ -1,0 +1,56 @@
+#mainScreen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  background-color: #161717;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+.hero {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  color: #fafafa;
+  align-items: center;
+
+  & img {
+    width: 340px;
+    margin: 20px auto;
+  }
+
+  & h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 600px;
+    color: #a2a2a2;
+  }
+
+  & button {
+    background-color: rgb(33, 192, 99);
+    padding: 10px 24px;
+    border-radius: 24px;
+    border: none;
+    color: #161717;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 24px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a2a2a2;
+}

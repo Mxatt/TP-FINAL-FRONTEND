@@ -1,0 +1,48 @@
+#chatHeader {
+  display: flex;
+  justify-content: space-between;
+  max-height: 70px;
+  background-color: #161717;
+  width: 100%;
+}
+
+.chatUser {
+  display: flex;
+  align-items: center;
+}
+
+#userName {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.headerButton {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerButton:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #292a2a;
+  border-radius: 50%;
+  transition: background-color 0.15s ease-in-out;
+}

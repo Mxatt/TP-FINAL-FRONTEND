@@ -1,0 +1,78 @@
+#aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1f1f;
+  justify-content: space-between;
+  border-right: 1px solid #343636;
+  padding: 10px 12px;
+  width: 64px;
+  align-items: center;
+}
+
+.topButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.asideButton {
+  background-color: transparent;
+  border: none;
+  color: #a5a5a5;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  aspect-ratio: 1/1;
+}
+
+.asideButton:hover {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #292a2a;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.userPhoto {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.bottomButton {
+  background-color: transparent;
+  border: none;
+  color: #a5a5a5;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  aspect-ratio: 1/1;
+}
+
+.bottoZmButton:hover {
+  background-color: transparent;
+  border: none;
+  color: #a5a5a5;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  aspect-ratio: 1/1;
+}
+
+.bottomButton:hover {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #292a2a;
+  transition: background-color 0.15s ease-in-out;
+}

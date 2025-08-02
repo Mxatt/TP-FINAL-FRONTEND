@@ -1,0 +1,61 @@
+.chatMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/background.jpeg");
+}
+
+.chatArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer {
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+ul {
+  color: white;
+  list-style: none;
+}
+
+.messageInputContainer {
+  background-color: transparent;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sendedMessages,
+.recievedMessages {
+  margin: 5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  background-color: #242626;
+}
+
+.sendedMessages {
+  background-color: #144d37;
+}
+
+.deleteMsgBtn {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+.deleteMsgBtn:hover {
+  color: red;
+  cursor: pointer;
+}

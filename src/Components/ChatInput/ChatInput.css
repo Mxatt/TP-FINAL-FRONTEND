@@ -1,0 +1,62 @@
+.messageInputForm {
+  display: flex;
+  align-items: center;
+  border-radius: 26px;
+  background-color: #242626;
+  width: 100%;
+  padding: 5px;
+  margin: 0 12px 12px 12px;
+}
+
+.button-default {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.button-default:hover {
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  background-color: #3a3c3c;
+}
+
+.sendButton,
+.voiceButtonContainer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.sendButton {
+  border-radius: 50%;
+  background-color: #21c063;
+  padding: 10px;
+}
+
+.messageInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.messageInput:focus {
+  outline: none;
+  color: #fff;
+}
+
+.voiceButtonContainer {
+  color: white;
+  background-color: inherit;
+  border: none;
+}
