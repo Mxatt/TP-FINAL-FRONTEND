@@ -18,8 +18,6 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: end;
-  justify-content: end;
 }
 
 ul {
@@ -38,19 +36,35 @@ ul {
 .listedMessages {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.sendedMessages {
+  align-self: flex-end;
+  background-color: #144d37; 
+  color: #fff;
+  margin-left: auto;
+}
+
+.recievedMessages {
+  align-self: flex-start;
+  background-color: #242626;
+  color: #fff;
+  margin-right: auto;
 }
 
 .sendedMessages,
 .recievedMessages {
-  margin: 5px 10px 5px 10px;
-  padding: 5px 10px 5px 10px;
+  margin: 5px 10px;
+  padding: 6px 8px 8px 9px;
   border-radius: 10px;
-  max-width: 90%;
-  background-color: #242626;
-}
-
-.sendedMessages {
-  background-color: #144d37;
+  max-width: 70%;
+  word-break: break-word;
+  display: inline-block;
+  font-size: 0.875rem;
+  position: relative;
 }
 
 .deleteMsgBtn {

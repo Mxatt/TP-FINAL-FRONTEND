@@ -32,7 +32,7 @@ const ChatScreen = () => {
               key={msg.messageID}
               className={msg.fromUser ? "sendedMessages" : "recievedMessages"}
             >
-              [{msg.messageHour}] {msg.messageValue}
+              {msg.messageValue}
               {msg.fromUser && (
                 <button
                   className="deleteButton"
