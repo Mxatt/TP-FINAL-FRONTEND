@@ -3,6 +3,9 @@
   background-color: #161717;
   border-right: 1px solid #3c3c3c;
   min-width: 30dvw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .search-container {
@@ -51,6 +54,12 @@
   border: 1px solid #262727;
   border-radius: 42px;
 }
+#chatNav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 #navHeader {
   display: flex;
   justify-content: space-between;
@@ -88,22 +97,37 @@
 
 @media screen and (max-width: 1440px) {
   .chat_nav-button {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .chat_nav-button {
-    display: none;
-  }
   .rightHeader{
     display: none;
   }
+  #chatNavSection{
+    width: 100%;
+  }
+  .chat_nav-button {
+    font-size: 0.875rem;
+  }
+  .buttons-container{
+    gap: 3px;
+  }
 }
 
+
 @media screen and (max-width: 768px) {
-  .search-container{
-    width: fit-content;
+
+  .chat_nav-button {
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
-  .search-container input {
-    display: none;}
+}
+
+@media screen and (max-width: 480px) {
+
+  .buttons-container{
+    display: flex;
+    justify-content: center;
+  }
 }

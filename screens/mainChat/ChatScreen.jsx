@@ -13,6 +13,17 @@ const ChatScreen = () => {
   );
   const messagesEndRef = useRef(null);
 
+  const [showChatScreen, setShowChatScreen] = useState(false);
+  useEffect(() => {
+    const handleShowChatScreen = () => {
+      setShowChatScreen(true);
+    };
+    window.addEventListener("showChatScreen", handleShowChatScreen);
+    return () => {
+      window.removeEventListener("showChatScreen", handleShowChatScreen);
+    };
+  }, []);
+
   useEffect(() => {
     setMessages(contact ? contact.messageHistory : []);
   }, [contact]);

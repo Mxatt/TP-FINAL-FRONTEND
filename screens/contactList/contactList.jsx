@@ -1,11 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { contactListData } from "../../src/data/contacts.js";
 import ContactCard from "../../src/Components/contactCard/contactCard.jsx";
 import "./contactlist.css";
+import "../../src/Components/chatNav/chatnav.jsx";
 
 const ContactList = () => {
+  const navigate = useNavigate();
+  const handleContactClick = (id) => {
+    navigate(`/chat/${id}`);
+    window.dispatchEvent(new CustomEvent("showChatScreen"));
+  };
+
   return (
-    <div className="contactList">
+    <div id="contactList">
       {contactListData.map((contact) => (
         <ContactCard
           key={contact.id}
@@ -14,6 +22,7 @@ const ContactList = () => {
           profilePhoto={contact.profilePhoto}
           lastMessage={contact.lastMessage}
           hour={contact.hour}
+          onClick={() => handleContactClick(contact.id)}
         />
       ))}
     </div>
