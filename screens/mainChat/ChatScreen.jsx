@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { contactListData } from "../../src/data/contacts";
 import ChatHeader from "../../src/Components/ChatHeader/chatheader";
@@ -11,9 +11,18 @@ const ChatScreen = () => {
   const [messages, setMessages] = useState(
     contact ? contact.messageHistory : []
   );
+  const messagesEndRef = useRef(null);
+
   useEffect(() => {
     setMessages(contact ? contact.messageHistory : []);
   }, [contact]);
+
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
+
   if (!contact) return <p>Usuario no encontrado</p>;
   const handleSend = (newMessage) => {
     setMessages((prev) => [...prev, newMessage]);
@@ -43,6 +52,7 @@ const ChatScreen = () => {
               )}
             </li>
           ))}
+          <div ref={messagesEndRef} />
         </ul>
       </div>
       <ChatInput Send={handleSend} />
