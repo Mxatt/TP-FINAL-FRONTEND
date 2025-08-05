@@ -1,13 +1,1 @@
-Elegi el CLON DE WHATSAPP, ya que fue en parte por lo que vimos en la cursada, Mi trabajo, si bien fue con conocimientos adquiridos en la cursada, mi trabajo lo hice de 0 yo, por mi cuenta con lo que fui entendiendo, Las librerias que use, fueron unicamente las de react router, para las rutas y las navegaciones, el resto, todo por defecto.
-
-Al hacer el trabajo por mi cuenta el primer problema que encontre fue el como hacer las rutas, era un tema el cual se me dificultaba mucho al inicio, coincidero que use state no fue tanto mi problema, pero si me costo algo al inicio. 
-
-Intente hacer todo mi trabajo en ingles para adecuarme y que sea mas legible para no mezclar terminologias mas especificas y fui a nombres de variables y funciones mas aceptadas en la comidad.
-
-Decidi usar este formato de carpetas ya que divido principalmente 2 cosas, 1 las pantallas, donde finalmente termino renderizando ahi mi contenido,
-y 2 ya que divido componentes chiquititos para mejorar la escabilidad, Cada una con su respectivo css mas especifico y su funcion en si que se reutiliza en las pantallas, Donde en algunos casos le di un poco de css mas generico para que se adecue al css que le estoy dando a elementos en alguna pantalla en especifico.
-Tambien, decidi crear en la carpeta assets un archivo de iconos, en los cuales guardo los svgs, los guarde con la posibilidad no solo de si, mantener el codigo limpio llamandolo unicamente como componente evitando pegar todas las lineas de codigo del svg, sino que ademas, puedo pasarle props, como el classname para modificarlo con css, Eso es algo que me ahorro mucho tiempo, ya que si, esa tambien fue una complicacion cuando arrancaba, Queria evitar ir en contra de la metodologia DRY, evitar escribir 20 svgs que solo ensucian el codigo.
-
-mis rutas se actualizan, siendo la base la url con / y al clickear mis contactos, se actualiza con la id del mismo cambiando los mensajes
-
-Luego, La funcion de borrar mensajes puse para que se borren UNICAMENTE los mensajes que manda la persona que manda el mensaje, y con una condicional, detecto si lo mando el usuario (ahora inutil, pero intente dejar la logica en un supuesto de venir datos de una database) 
+Bueno, en esta nueva entrega, mi mayor dificultad fue la logica la cual comparaba mi version mobile de mi version desktoip, ya que en mobile, hice mi repsponsive de modo que cargue de a una vez mis pantallas, es decir, tengo por defecto mi pantalla de contactos, al apretar sobre el chat me lleva a la pantalla de ese chat, Tuve que rebuscarmelas y hacer metodos menos convencionales para hacerlo ya que como anteriormente dije, intente hacer todo por mi cuenta, con lo aprendido en las clases pero sin ayuda de las mismas como tal.
